@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "../../global.css";
+/* Nav */
+.navbar{
+    width: 100%;
+    height: 90px;
+    background: transparent;
+
+    display: flex;
+    justify-content: left;
+}
+
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+  }
+  
+  .navbar-logo {
+    margin-right: 40vw;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    list-style: none;
+    text-align: center;
+    width: 10vw;
+  
+  }
+  
+  .nav-item {
+    font-size: 18px;
+  }
+
+  .nav-item_logount{
+    margin: 0 0 0 150px;
+  }
+  .nav-links_logount {
+    width: 90px;
+    font-family: Roboto;
+    font-weight: 900;
+    color:rgb(248, 244, 244);
+    border: 0.5px solid rgb(6, 146, 151);
+    display: flex;
+    text-decoration: none;
+    padding:1rem;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: rgba(5, 4, 4, 0.35) 0px 5px 15px;
+  }
+  
+  .nav-links {
+    width: 230px;
+    font-family: Roboto;
+    font-weight: 900;
+    color:rgb(248, 244, 244);
+    display: flex;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border: 1px solid rgb(6, 146, 151);
+    border-radius: 5px;
+    
+  }
+  
+  .nav-links::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width .3s;
+}
+.nav-links:hover {
+  width: 230px;
+  height: 105%;
+  font-family: Roboto;
+  font-weight: 900;
+  color:rgb(252, 252, 252);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: rgb(6, 146, 151);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: width 1s;
+  
+}
+.nav-linkes:hover::after {
+  width: 100%;
+  
+}
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu_icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+
+    .navbar{
+        position: fixed;
+        
+    }
+    
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      color: var(--primary-color);
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar-logo h3 {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      transform: translate(25%, 50%);
+      font-size: 30px;
+    }
+  
+    .menu_icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 90%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: var(--primary-color);
+      padding: 14px 20px;
+      border: 2px solid var(--primary-color);
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: var(--primary-color);;
+      color: var(--secundary-color);
+      transition: 250ms;
+    }
+  }
+  /* ------------------------ Smartphones Galaxy S5 --------------------------*/
+
+/* Portrait */
+@media screen 
+and (min-width: 360px) 
+and (max-height: 640px) 
+and (orientation: portrait) {
+  .navbar{
+    position:fixed ;
+    width: 95%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+}

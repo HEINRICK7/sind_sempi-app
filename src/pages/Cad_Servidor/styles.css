@@ -1,0 +1,23 @@
+@import '../../global.css';
+
+.container_cad_servidor {
+    padding: 10px;
+    margin: 8% 2% auto 4.6%;
+    background: cornsilk;
+    width: 90%;
+    height: 100vh;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+.formulario_servidor_cad_servidor {
+    font-family: Roboto;
+    text-align: center;
+    margin-top: 50px;
+    color:rgb(40, 2, 75);
+}
+
+.formulario_servidor h1 {
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(88, 88, 88);
+}

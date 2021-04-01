@@ -1,0 +1,193 @@
+@import '../../global.css';
+
+.formulario_servidor_edit_servidor  {
+    font-family: Roboto;
+    text-align: center;
+    color:rgb(36, 2, 68);
+}
+.formulario_servidor_edit_servidor input {
+    color:rgb(129, 127, 131);
+    font-weight: 900;
+
+    font-family: Roboto;
+    font-size: 16px;
+}
+.input_md3 {
+    margin-top: 80px;
+    display: flex;
+    flex-grow: 3;
+    justify-content:center;
+}
+
+.input_left {
+    border-right: 0;
+    width: 15%;
+}
+.input_rigth {
+    width: 11.5%;
+}
+.input_center {
+    border-right: 0;
+    width: 40%;
+}
+
+.input_cpf {
+    border-top: 0;
+    border-right: 0;
+    width: 13%;
+}
+.input_rg {
+    border-top: 0;
+    border-right: 0;
+    width: 10%;
+}
+.input_uf {
+    border-top: 0;
+    border-right: 0;
+    width: 3%;
+}
+.input_endereco {
+    border-top: 0;
+    width: 40.47%;
+}
+
+.input_bairro {
+    border-top: 0;
+    border-right: 0;
+    width: 16.5%;
+}
+.input_cidade {
+    border-top: 0;
+    border-right: 0;
+    width: 10%;
+}
+.input_cep {
+    border-top: 0;
+    border-right: 0;
+    width: 10%;
+}
+.input_escolaridade {
+    border-top: 0;
+    border-right: 0;
+    width: 10%;
+}
+.input_pisPasep {
+    border-top: 0;
+    border-right: 0;
+    width: 10%;
+}
+.input_estCivil {
+    border-top: 0;
+    width: 10%;
+}
+
+.input_nomeConjuge {
+    border-top: 0;
+    border-right: 0;
+    width: 40%;
+}
+.input_telResidencial {
+    border-top: 0;
+    border-right: 0;
+    width: 15%;
+}
+.input_telCelular {
+    border-top: 0;
+    width: 11.5%;
+}
+.input_email {
+    border-top: 0;
+    width: 66.5%;
+}
+input {
+  padding: 10px;
+  height: 45px;
+  border: 2px solid rgb(71, 3, 85);
+}
+.dependentes {
+    display: block;
+    width: 100%;
+   
+}
+.dependentes h5 {
+    padding-bottom: 5px;
+    margin: 50px 0 0 0;
+}
+.dependentes input {
+    margin: 2px 0 0 0;
+    width: 66.5%;
+}
+
+.orgao_empregador {
+    border-right: 0;
+    width: 31.5%;
+}
+.municipio {
+    border-right: 0;
+    width: 16%;
+}
+.uf {
+    border-right: 0;
+    width: 5%;
+}
+.dados_cadastrais h5 {
+    margin: 50px 0 0 10px;
+    padding-bottom: 5px;
+}
+.input_telefone {
+    margin-left: -7px;
+    border-top: 0;
+    border-right: 0;
+    width: 14.9%;
+}
+.input_secretaria {
+    border-top: 0;
+    border-right: 0;
+    width: 20%;
+}
+.input_departamento {
+    border-top: 0;
+    border-right: 0;
+    width: 16%;
+}
+.input_carga_horaria {
+    border-top: 0;
+    width: 15.664%;
+}
+.input_cargo_funcao {
+    margin-left: -7px;
+    border-top: 0;
+    border-right: 0;
+    width: 49.3%;
+}
+.input_salario_base {
+    border-top: 0;
+    width: 17.2634%;
+}
+
+.button_salvar button {
+    margin: 2% 0 0  0;
+    padding: 20px;
+    width: 40%;
+    background: rgb(6, 146, 151);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    font-size: 18px;
+    color: #FFFF;
+    font-weight: 900;
+}
+.button_salvar button:hover {
+   
+    background: rgb(3, 118, 122);
+    
+}
+.container_edit_servidor{
+    margin: 8% 2% auto 4.6%;
+    background: cornsilk;
+    width: 90%;
+    height: 100vh;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
