@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 
 import api from '../../services/api'
 
-import { Input, Space } from 'antd';
+import { Input, Space, message } from 'antd';
 import { EyeInvisibleOutlined, EyeTwoTone, MailOutlined, LockOutlined } from '@ant-design/icons'
 
 import './styles.css'
@@ -18,6 +18,8 @@ const Login = () => {
   
   const history = useHistory();
 
+  const key = 'updatable';
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -25,28 +27,37 @@ const Login = () => {
 
     if (email === '' || password === '') {
 
-        window.alert('Digite Email e Senha')
-    }
+      message.loading({ content: 'Processando...', key });
+      setTimeout(() => {
+        message.warning({ content: 'Digite Email e Senha', key, duration: 2 });
+      }, 1000);
+    };
     
-    if(email !== '') {
+    
+    if(email && password !== '') {
 
         try {
             const response = await api.post('/auth/authenticate', data);
             const { token } = response.data;
-
-            console.log(token)
           
             
             localStorage.setItem('token', token);
+            message.loading({ content: 'Processando...', key });
+              setTimeout(() => {
+                message.success({ content: 'Acesso Liberado', key, duration: 2 });
 
-            history.push('/list_servidor');
+                 history.push('/list_servidor');
+              }, 1000);
+
+           
     
         } catch (error) {
             
-            //toast
-           
-          
-        }
+          message.loading({ content: 'processando...', key });
+          setTimeout(() => {
+            message.error({ content: 'Email ou Senha Inválido', key, duration: 2 });
+          }, 1000);
+        };
                                       
     }
     
@@ -81,7 +92,7 @@ const Login = () => {
     
                   </Space>
                    
-                  <button type="submit" className="button_login">Entrar</button>
+                  <button type="submit" className="button_success">Entrar</button>
                 </form> 
             </div>
           </div>

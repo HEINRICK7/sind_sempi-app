@@ -1,3 +1,5 @@
+@import '../../global.css';
+
 .container_login {
     width: 100vw;
     height: 100vh;
@@ -14,17 +16,6 @@
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-.button_login {
-    margin-top: 50px;
-    background: darkgreen;
-    width: 60%;
-    height: 50px;
-    color: #ffff;
-
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
 
   
 @media screen and (max-width: 992px) {
