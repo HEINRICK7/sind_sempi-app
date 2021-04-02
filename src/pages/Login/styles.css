@@ -10,7 +10,7 @@
     }
 .box {
     text-align: center;
-    width: 30vw;
+    width: 40vw;
     height: 60vh;
     background: #fff;
     border-radius: 8px;
@@ -22,7 +22,7 @@
     .box {
         padding: 10px;
         text-align: center;
-        width: auto;
+        width: 80%;
         height: auto;
         background: #fff;
         border-radius: 8px;
@@ -33,7 +33,7 @@
   @media (max-width: 576px) {
     .box {
         text-align: center;
-        width: auto;
+        width: 80%;
         height: auto;
         background: #fff;
         border-radius: 8px;

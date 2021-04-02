@@ -53,7 +53,7 @@ useEffect(() => {
 
   handleEdit(_id)
   
-},[_id]);
+});
 
 
 const handleEdit = async () => {

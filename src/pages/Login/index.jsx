@@ -70,7 +70,7 @@ const Login = () => {
                 <img src={Logo} style={{width: 150, marginTop: 20}} alt="logo"/>    
                 <h1 style={{marginTop: 20}}>Faça seu Login</h1>
                 <form onSubmit={handleLogin}>
-                  <Space direction="horizontal" style={{marginTop: 50}}>
+                  <Space direction="vertical" style={{marginTop: 50, width:'80%'}}>
 
                       <Input
                         placeholder="Seu Email"

@@ -30,7 +30,7 @@ const Home = () => {
 		})
 		.then(response => {
 			setResults(response.data.users)
-			console.log(response.data)
+			
 		})
 		.catch(error => console.log(error))
 

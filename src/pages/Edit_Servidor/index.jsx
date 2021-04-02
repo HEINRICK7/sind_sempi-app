@@ -55,7 +55,7 @@ const Formulario = () => {
             handleEdit(_id)
        } 
       
-    }, [_id]);
+    });
 
     const onSubmit = async (e) => {
         e.preventDefault()
