@@ -2,10 +2,9 @@
 
 .container_cad_servidor {
     padding: 10px;
-    margin: 8% 2% auto 4.6%;
+    margin: 8% 2% 10% 4.6%;
     background: cornsilk;
     width: 90%;
-    height: 100vh;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
