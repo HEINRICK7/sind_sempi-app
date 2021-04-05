@@ -63,8 +63,8 @@ const Navbar = () => {
                 Listar Servidores
               </Link>
             </li>
-            <li className='nav-item_logount'>
-              <button  className='nav-links_logount' type="button" onClick={()=> {handleLogout()}}><FiPower style={{marginLeft: 12,fontSize: 30}}/></button>
+            <li className='nav-item'>
+              <button  className='nav-links_logount' type="button" onClick={()=> {handleLogout()}}><FiPower style={{marginTop: 9,fontSize: 30}}/></button>
             </li>
           </ul>
         </div>
