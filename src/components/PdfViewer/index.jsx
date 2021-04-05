@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 
-
 import Pdf from "react-to-pdf"
 
 import './styles.css'
 
 import api from '../../services/api'
 
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import Logo from '../../assets/logo.png'
 
@@ -73,7 +72,11 @@ const handleEdit = async () => {
         <>
           <div className="container_pdfViewer">
                 <Pdf targetRef={ref} filename={`${models.nome}.pdf`}>
-                    {({ toPdf }) => <button className="buttom_download" onClick={toPdf}>Gerar Pdf</button>}
+                    {({ toPdf }) => 
+                        <Link to={`/list_servidor`}>
+                            <button className="buttom_download" onClick={toPdf}>Gerar Pdf</button>
+                        </Link>
+                    }
                 </Pdf> 
 
                 <div className="formulario_servidor_pdf" ref={ref}>
