@@ -5,28 +5,21 @@
     width: 100%;
     height: 90px;
     background: transparent;
-
     display: flex;
-    justify-content: left;
 }
 
   .navbar-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1500px;
   }
   
   .navbar-logo {
-    margin-right: 40vw;
+    margin-right: 30vw;
   }
   
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(3, auto);
     list-style: none;
-    text-align: center;
-    width: 10vw;
   
   }
   
@@ -34,19 +27,14 @@
     font-size: 18px;
   }
 
-  .nav-item_logount{
-    margin: 0 0 0 150px;
-  }
   .nav-links_logount {
     width: 90px;
+    height: 49px;
     font-family: Roboto;
     font-weight: 900;
     color:rgb(248, 244, 244);
-    border: 0.5px solid rgb(6, 146, 151);
-    display: flex;
+    border: 1px solid rgb(6, 146, 151);
     text-decoration: none;
-    padding:1rem;
-    height: 90%;
     border-radius: 5px;
     box-shadow: rgba(5, 4, 4, 0.35) 0px 5px 15px;
   }
@@ -60,7 +48,7 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
-    border: 1px solid rgb(6, 146, 151);
+    border: 2px solid rgb(6, 146, 151);
     border-radius: 5px;
     
   }
