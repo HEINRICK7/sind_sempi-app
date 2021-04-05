@@ -1,133 +1,450 @@
-
-.formulario_servidor_pdf {
-    width: 60.8vw;
-    height: 150vh;
-    margin: auto;
+.container_pdfViewer{
+    margin-top: 150px;
+    padding: 40px;
+    width: 90%;
+    margin: 50px auto;
+    background: rgb(243, 233, 222);
+    
 }
-.input_md3_pdf {
+.formulario_servidor_pdf {
+    padding: 20px;
+    background: rgb(252, 251, 250);
+    width: 21cm;
+    height: 29.7cm;
+    margin: 10px auto; 
+    border-radius: 8px;
+}
+.inputs_block{
+    display: grid;
+    padding:0 15px 0 8px;
+}
+.inputs_block input {
+    padding-top: 15px;
+    border: 2px solid #222121;
+    
+}
+.inputs_block span {
+    height: 0;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+/*
+    PRIMEIRA LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md1_pdf {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.input_matricula_pdf input {
+    width: 100%;
+    border-right: 0;
+}
+.float_matricula {
+    margin-left: 5px;
+    position: absolute;
+    
+}
+.input_nome_pdf input{
+    width: 100%;
+    border-right: 0;
+}
+.float_nome {
+    margin-left: 5px;
+    position: absolute;
+    
+    
+}
+.input_nascimento_pdf input{
+    width: 100%;
+}
+.float_nascimento {
+    margin-left: 5px;
+    position: absolute;
+    
+    
+}
+
+/*
+    SEGUNDA LINHA DE INPUTS
+*/
+.input_md2_pdf {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+
+}
+
+.input_cpf_pdf input{
+    width: auto;
+    border-top: 0;
+    border-right: 0;
+}
+.float_cpf{
+    margin-left: 5px;
+    position: absolute;
+}
+.input_rg_pdf input {
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_rg{
+    margin-left: 5px;
+    position: absolute;
+}
+.input_uf_pdf input {
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_uf{
+    margin-left: 5px;
+    position: absolute;
+}
+.input_endereco_pdf input {
+    width: 100%;
+    border-top: 0;
+}
+.float_endereco{
+    margin-left: 5px;
+    position: absolute;
+}
+/*
+    TERCEIRA LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md3_pdf {
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+}
+.input_bairro_pdf input{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_bairro{
+    margin-left: 5px;
+    position: absolute;
+}
+.input_cidade_pdf input{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_cidade{
+    margin-left: 5px;
+    position: absolute;
+}
+.input_cep_pdf input{
+    width: 100%;
+    border-top: 0;
+}
+.float_cep{
+    margin-left: 5px;
+    position: absolute;
+}
+/*
+    TERCEIRA_1 LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md3_1_pdf {
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+}
+.input_escolaridade_pdf input{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_escolaridade{
+    margin-left: 5px;
+    position: absolute;
+}
+.input_pisPasep_pdf input{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_pisPasep{
+    margin-left: 5px;
+    position: absolute;
+}
+.input_estCivil_pdf input{
+    border-top: 0;
+}
+.float_estCivil{
+    margin-left: 5px;
+    position: absolute;
+}
+/*
+    QUARTA LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md4_pdf {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+}
+
+.input_nomeConjuge_pdf input {
+    width: 100%;
+   border-top: 0;
+   border-right: 0;
+
+}
+.float_nomeConjuge {
+    margin-left: 5px;
+    position: absolute;
+}
+.input_telResidencial_pdf input {
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+ 
+ }
+ .float_telResidencial {
+     margin-left: 5px;
+     position: absolute;
+ }
+ .input_telCelular_pdf input {
+     width: 100%;
+    border-top: 0;
+ 
+ }
+ .float_telCelular {
+     margin-left: 5px;
+     position: absolute;
+ }
+ /*
+    QUINTA LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md5_pdf {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.input_email_pdf input{
+    width: 100%;
+    border-top: 0;
+}
+.float_email {
+    margin-left: 5px;
+    position: absolute;
+}
+/*
+    SEXTA LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md6_pdf {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.formulario_servidor_pdf .input_md6_pdf h5 {
     margin-top: 20px;
-    display: flex;
-    flex-grow: 3;
-    justify-content:left;
+    font-weight: 800;
+
+}
+.input_dependentes_pdf input{
+    width: 100%;
+    
+}
+.float_dependentes {
+    margin-left: 5px;
+    position: absolute;
+}
+/*
+    SETIMA LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md7_pdf {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.inputs_block h5 {
+    margin-top: 20px;
+    font-weight: 800;
+
+}
+.input_orgao_empregador_pdf input{
+    width: 100%;
+    border-right: 0;
+}
+.float_orgao_empregador {
+    margin-left: 5px;
+    position: absolute;
+    
+}
+.input_municipio_pdf input {
+   width: 100%;
+   border-right: 0;
+}
+.float_municipio {
+    margin-left: 5px;
+    position: absolute;
+    
+}
+.input_uf_cadastrais_pdf input{
+   width: 100%;
+   border-right: 0;
+}
+.float_uf_cadastrais {
+    margin-left: 5px;
+    position: absolute;
+    
+}
+.input_data_admissao_pdf input{
+  width: 100%;
+}
+.float_data_admissao {
+    margin-left: 5px;
+    position: absolute;
+    
+}
+
+/*
+    OITAVA LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md8_pdf {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.input_telefone_pdf input{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_telefone {
+    margin-left: 5px;
+    position: absolute;
+}
+.input_secretaria_pdf input{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_secretaria {
+    margin-left: 5px;
+    position: absolute;
+}
+.input_departamento_pdf input{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_departamento {
+    margin-left: 5px;
+    position: absolute;
+}
+.input_carga_horaria_pdf input{
+    width: 100%;
+    border-top: 0;
+}
+.float_carga_horaria {
+    margin-left: 5px;
+    position: absolute;
+}
+/*
+    NONA LINHA DE INPUTS
+*/
+.formulario_servidor_pdf .input_md9_pdf {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+.input_cargo_funcao_pdf input{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+}
+.float_cargo_funcao {
+    margin-left: 5px;
+    position: absolute;
+}
+.input_salario_base_pdf input{
+    width: 100%;
+    border-top: 0;
+    
+}
+.float_salario_base {
+    margin-left: 5px;
+    position: absolute;
+}
+
+.input_inline_pdf {
+    margin-top: -30px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+.input_inline_pdf input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #222121; 
+}
+.float_local_data{
+    position: relative;
+    bottom: -70px;
+    left: 100px;
+
+}
+.float_ass_servidor{
+    position: relative;
+    bottom: -70px;
+    left: 100px;
+
+}
+.observacoes{
+    padding:0 15px 0 8px;
+    margin-top: 40px;
+}
+.area_observacao {
+    width: 100%;
+    height: 90px;
+    border: 2px solid #222121;
+}
+.span_top {
+    font-weight: 800;
+    font-style: oblique;
+}
+.span_bottom {
+    font-weight: 800;
+    font-style: oblique;
+}
+.footer_pd {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 95%;
+    border: none;
+    border-top: 3px solid #222121;
+
+}
+.span_footer {
+  
+    display: grid;
+    text-align: center;
 }
 .formulario_servidor_pdf .cabecalho {
     text-align: center;
-    padding-top: 50px;
-    margin-left: -370px;
+    padding-top: 10px;
 }
 .logo {
     position: relative;
     top: -90px;
     left: -300px;
-    width: 150px;
+    width: 140px;
 }
 .formulario_servidor_pdf h2 {
     text-align: center;
     margin-top: -110px;
-    margin-left: -370px;
-}
-.inputs_pdf input {
-    color: rgb(95, 95, 94);
-    font-weight: 700;
-    padding-top:20px ;
-}
-.inputs_pdf span {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 12px;
-    height: 0;
-    
-}
-.input_matricula_pdf {
-    border-right: 0;
-    width: 15%;
-   
-}
-.float_matricula{
-    position: absolute;
-    left: 365px;
-    
-}
-.input_nome_pdf {
-    border-right: 0;
-    width: 15%;
-   
-}
-.float_nome{
-    position: absolute;
-    left: 540px;
-   
-}
-.input_nascimento_pdf {
-    width: 11.5%;
 }
 
-.float_nascimento{
-    position: absolute;
-    left: 1008px;
-   
-}
-
-.input_inline_pdf {
-    display: flex;
-    padding: 10px 0 80px 15px;
-}
-.input_left_pdf {
-  background: transparent;
-  border: none;
-  border-bottom: 3px solid black;
-  margin-right: 50px;
-  width: 30%;
-}
-.input_left_pdf span {
-    position: relative;
-    top: 25px;
-    left: 130px;
-}
-.input_rigth_pdf {
-    background: transparent;
-    border: none;
-    border-bottom: 3px solid black;
-    width: 30%;
-}
-.input_rigth_pdf span {
-    position: relative;
-    top: 25px;
-    left: 100px;
-}
-.observacoes {
-    width: 66.5%;
-    height: 100px;
-    padding: 10px;
-    border: 2px solid black;
-}
-.observacoes span.span_top {
-    font-size: 14px;
-    position: relative;
-    top: -40px;
-}
-.observacoes span.span_bottom {
-    float: left;
-    font-size: 14px;
-    position: relative;
-    left: 0;
-    top: 65px;
-}
-
-.footer {
-    border: none;
-    border-top: 4px solid black;
-    width: 66.5%;
-    margin-top: 60px;
-    text-align: center;
-}
-.buttom_download {
-    width: 300px;
+.container_pdfViewer .buttom_download {
+    padding: 30px;
+    width: auto;
     height: 60px;
+    float: right;
     background: seagreen;
-    position: relative;
-    left: 80%;
-    top: -108px;
     text-align: center;
     padding: 15px;
     border-radius: 8px;
@@ -136,265 +453,4 @@
     cursor: pointer;
 
 }
-.container_pdfViewer{
-    padding-top: 20px;
-    margin: 110px 0 0 80px;
-    background: cornsilk;
-    width: 90%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.input_cpf_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 13%;
-}
-.float_cpf{
-    position: absolute;
-    left: 365px;
-    font-size: 12px;
-    font-weight: 800;
-}
 
-.input_rg_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 10%;
-}
-.float_rg{
-    position: absolute;
-    left: 516px;
-}
-
-.input_uf_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 3%;
-}
-.float_uf{
-    position: absolute;
-    left: 632px;
-    
-}
-
-.input_endereco_pdf {
-    border-top: 0;
-    width: 40.5%;
-}
-.float_endereco {
-    position: absolute;
-    left: 670px;
-}   
-
-.input_bairro_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 15%;
-}
-.float_bairro {
-    position: absolute;
-    left: 365px;
-}   
-
-.input_cidade_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 7%;
-}
-.float_cidade {
-    position: absolute;
-    left: 538px;
-}   
-
-.input_cep_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 7%;
-}
-.float_cep {
-    position: absolute;
-    left: 622px;
-}   
-
-.input_escolaridade_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 16.5%;
-}
-.float_escolaridade {
-    position: absolute;
-    left: 705px;
-}
-.input_pisPasep_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 11%;
-}
-.float_pisPasep {
-    position: absolute;
-    left: 895px;
-}
-
-.input_estCivil_pdf {
-    border-top: 0;
-    width: 10%;
-}
-.float_estCivil {
-    position: absolute;
-    left: 1025px;
-}
-
-.input_nomeConjuge_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 40%;
-}
-.float_nomeConjuge {
-    position: absolute;
-    left: 365px;
-}
-
-.input_telResidencial_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 15%;
-}
-.float_telResidencial {
-    position: absolute;
-    left: 830px;
-}
-
-.input_telCelular_pdf {
-    border-top: 0;
-    width: 11.5%;
-}
-.float_telCelular {
-    position: absolute;
-    left: 1008px;
-}
-
-.input_email_pdf {
-    border-top: 0;
-    width: 66.5%;
-}
-.float_email {
-    position: absolute;
-    left: 365px;
-}
-input {
-  padding: 5px;  
-  height: 45px;
-  border: 2px solid rgb(17, 16, 17);
-}
-.input_dependentes_pdf {
-    width: 100%;
-
-}
-.float_dependentes{
-    position: absolute;
-    top: 696px;
-    left: 365px;
-}
-.dependentes h5 {
-    padding-bottom: 5px;
-    margin: 20px 0 0 0;
-}
-.orgao_empregador_pdf {
-    margin-left: 0;
-    border-right: 0;
-    width: 31.5%;
-}
-.float_orgao_empregador {
-    position: absolute;
-    left: 365px;
-}
-
-.municipio_pdf {
-    border-right: 0;
-    width: 15%;
-}
-.float_municipio {
-    position: absolute;
-    left: 732px;
-}
-
-.uf_pdf {
-    border-right: 0;
-    width: 5%;
-}
-.float_uf_cadastrais {
-    position: absolute;
-    left: 908px;
-}
-.data_admissao_pdf {
-    width: 15.1%;
-}
-.float_data_admissao {
-    position: absolute;
-    left: 965px;
-}
-.dados_cadastrais h5 {
-    margin: 20px 0 0 0px;
-    padding-bottom: 5px;
-}
-
-.input_telefone_pdf {
-    margin-left: 0;
-    border-top: 0;
-    border-right: 0;
-    width: 14.9%;
-}
-.float_telefone {
-    position: absolute;
-    left: 365px;
-}
-
-.input_secretaria_pdf {
-    margin-left: 0;
-    border-top: 0;
-    border-right: 0;
-    width: 20%;
-}
-.float_secretaria {
-    position: absolute;
-    left: 538px;
-}
-
-.input_departamento_pdf {
-    border-top: 0;
-    border-right: 0;
-    width: 16%;
-}
-.float_departamento {
-    position: absolute;
-    left: 772px;
-}
-
-.input_carga_horaria_pdf {
-    border-top: 0;
-    width: 15.664%;
-}
-.float_carga_horaria {
-    position: absolute;
-    left: 960px;
-}
-
-.input_cargo_funcao_pdf {
-    margin-left: 0;
-    border-top: 0;
-    border-right: 0;
-    width: 49.3%;
-}
-.float_cargo_funcao {
-    position: absolute;
-    left: 365px;
-}
-.input_salario_base_pdf {
-    border-top: 0;
-    width: 17.2634%;
-}
-.float_salario_base {
-    position: absolute;
-    left: 940px;
-}
