@@ -1,0 +1,22 @@
+.container_table {
+        text-align: center;
+        background: rgb(252, 251, 250);
+        width: 21cm;
+        height: 29.7cm;
+        margin: 0 auto; 
+        border-radius: 8px;
+  }
+  .search {
+      margin: 0 auto 30px auto;
+  }
+  .table_pdf {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }  
+  .cabecalho {
+    text-align: center;
+    margin: 50px auto -100px auto;
+  }
