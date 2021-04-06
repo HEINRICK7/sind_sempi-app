@@ -64,6 +64,15 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item'>
+              <Link
+                to='/relatorio'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Relatórios
+              </Link>
+            </li>
+            <li className='nav-item'>
               <button  className='nav-links_logount' type="button" onClick={()=> {handleLogout()}}><FiPower style={{marginTop: 9,fontSize: 30}}/></button>
             </li>
           </ul>

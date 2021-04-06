@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
+import NavBar from '../Navbar/index'
+
 import Pdf from "react-to-pdf"
 
 import './styles.css'
@@ -70,6 +72,7 @@ const handleEdit = async () => {
 }
     return (
         <>
+          < NavBar />
           <div className="container_pdfViewer">
                 <Pdf targetRef={ref} filename={`${models.nome}.pdf`}>
                     {({ toPdf }) => 
@@ -83,13 +86,13 @@ const handleEdit = async () => {
                 <form>
                     <div className="inputs_pdf"> 
                         <div className="cabecalho">
-                       <h3>SINDICATO DOS SERVIDORES PÚBLICOS MUNICIPAIS DE PIRIPIRI – SINDSEMPI</h3>
-                       <h3>ENDEREÇO: AVENIDA Dr PADUA MENDES, Nº 60</h3>
-                       <h3>CEP: 64260-000 – BAIRRO CENTRO – PIRIPIRI /PI – BRASIL</h3>
-                       <h3>CNPJ – 25.386.159/0001-17</h3>
-                       <h4>Telefones: (86) 9 99030326  / 9 8191 1600 / 9 95937302 </h4>
-                       <img src={Logo} className="logo" alt="logo"/>
-                    </div>
+                            <h3>SINDICATO DOS SERVIDORES PÚBLICOS MUNICIPAIS DE PIRIPIRI – SINDSEMPI</h3>
+                            <h3>ENDEREÇO: AVENIDA Dr PADUA MENDES, Nº 60</h3>
+                            <h3>CEP: 64260-000 – BAIRRO CENTRO – PIRIPIRI /PI – BRASIL</h3>
+                            <h3>CNPJ – 25.386.159/0001-17</h3>
+                            <h4>Telefones: (86) 9 99030326  / 9 8191 1600 / 9 95937302 </h4>
+                            <img src={Logo} className="logo" alt="logo"/>
+                        </div>
                         <h2>FICHA DE FILIAÇÃO</h2>
                         <div className="inputs_block">
 

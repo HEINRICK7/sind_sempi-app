@@ -50,12 +50,12 @@ const Formulario = () => {
     const { _id } = useParams();
 
     useEffect(() => {
-       if(_id !== undefined){
+       if( _id !== undefined){
 
             handleEdit(_id)
        } 
       
-    });
+    },[_id]);
 
     const onSubmit = async (e) => {
         e.preventDefault()
@@ -97,16 +97,13 @@ const Formulario = () => {
     }
     
     const handleEdit = async (_id) => {
-        await api.get(`register_filiacao/${_id}`, {
+        const response = await api.get(`register_filiacao/${_id}`, {
             headers: {
 				Authorization: `Bearer ${token}`,
 	
 			   }
         })
-        .then(response => {
-            setModels(response.data.userId)
-            
-        })
+        setModels(response.data.userId)
         
     }
     return (
@@ -136,6 +133,7 @@ const Formulario = () => {
                <input 
                className="input_rigth"
                type="text" 
+               name="data_nasc"
                placeholder="DATA DE NASCIMENTO"
                value={models.data_nasc}
                onChange={ e => updateModel(e)}
@@ -153,6 +151,7 @@ const Formulario = () => {
                 <input 
                 className="input_rg" 
                 type="text" 
+                name="rg"
                 placeholder="RG"
                 value={models.rg}
                 onChange={ e => updateModel(e)}
@@ -236,7 +235,7 @@ const Formulario = () => {
                <input 
                className="input_telResidencial" 
                type="text" 
-               nome="tel_residencial"
+               name="tel_residencial"
                placeholder="TEL.RESIDENCIAL"
                value={models.tel_residencial}
                onChange={ e => updateModel(e)}
