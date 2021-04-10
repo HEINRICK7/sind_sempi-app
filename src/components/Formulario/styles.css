@@ -1,161 +1,99 @@
-.input_md3 {
-    margin-top: 80px;
-    display: flex;
-    flex-grow: 3;
-    justify-content:center;
+.container_formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin: 0 auto;
 }
+.container_formulario .input_md1 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 50px auto 0 auto;
+}
+.container_formulario .input_md2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    margin: 20px auto 0 auto;
+}
+.container_formulario .input_md3 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 20px auto 0 auto;
+}
+.container_formulario .input_md4 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 20px auto 0 auto;
+}
+.container_formulario .input_md5 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 20px auto 0 auto;
+}
+.container_formulario .input_md6 {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+.container_formulario .input_md7 {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+.text_h5 {
+    margin-top: 50px;
+}
+.container_formulario .input_md8 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 0.5fr 1fr;
+    margin: 20px auto 0 auto;
+}
+.container_formulario .input_md9 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px auto 0 auto;
+}
+.container_formulario .input_md10 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 3fr 1fr;
+    margin: 20px auto 0 auto;
+}
+.floating_label {
+    position:relative;
+}
+  .floating_label input {
+      width:100%; 
+      height: 50px;
+      font-size:16px;  
+      border-radius: 5px;
+    }
+.floating_label label {
+    text-transform: uppercase;
 
-.input_matricula {
-    border-right: 0;
-    width: 15%;
-}
-.input_nascimento {
-    width: 11.5%;
-}
-.input_nome {
-    border-right: 0;
-    width: 40%;
-}
+  }  
+	.floating_label input:focus::-webkit-input-placeholder {opacity:0;}
+	.floating_label input:focus::-moz-placeholder {opacity:0;}
+	.floating_label input:focus:-moz-placeholder {opacity:0;}
+	.floating_label input:focus:-ms-input-placeholder {opacity:0;}
 
-.input_cpf {
-    border-top: 0;
-    border-right: 0;
-    width: 13%;
-}
-.input_rg {
-    border-top: 0;
-    border-right: 0;
-    width: 10%;
-}
-.input_uf {
-    border-top: 0;
-    border-right: 0;
-    width: 3%;
-}
-.input_endereco {
-    border-top: 0;
-    width: 40.47%;
-}
+	.floating_label input:focus + label, .floating_label input:required:valid + label {left:5px;top: 1px; opacity:1; font-size: 10px;}
 
-.input_bairro {
-    border-top: 0;
-    border-right: 0;
-    width: 16.5%;
-}
-.input_cidade {
-    border-top: 0;
-    border-right: 0;
-    width: 10%;
-}
-.input_cep {
-    border-top: 0;
-    border-right: 0;
-    width: 10%;
-}
-.input_escolaridade {
-    border-top: 0;
-    border-right: 0;
-    width: 10%;
-}
-.input_pisPasep {
-    border-top: 0;
-    border-right: 0;
-    width: 10%;
-}
-.input_estCivil {
-    border-top: 0;
-    width: 10%;
-}
-
-.input_nomeConjuge {
-    border-top: 0;
-    border-right: 0;
-    width: 40%;
-}
-.input_telResidencial {
-    border-top: 0;
-    border-right: 0;
-    width: 15%;
-}
-.input_telCelular {
-    border-top: 0;
-    width: 11.5%;
-}
-.input_email {
-    border-top: 0;
-    width: 66.5%;
-}
-
-.dependentes {
-    display: block;
-    width: 100%;
-   
-}
-.dependentes h5 {
-    padding-bottom: 5px;
-    margin: 50px 0 0 0;
-    font-weight: 900;
-    font-size: 16px;
-    color: rgb(91, 90, 92);
-}
-.dependentes input {
-    margin: 2px 0 0 0;
-    width: 66.5%;
-}
-
-.orgao_empregador {
-    margin-left: -6px;
-    border-right: 0;
-    width: 35.1%;
-}
-.municipio {
-    border-right: 0;
-    width: 16%;
-}
-.uf {
-    border-right: 0;
-    width: 5%;
-}
-.dados_cadastrais h5 {
-    padding-bottom: 5px;
-    font-weight: 900;
-    font-size: 16px;
-    color: rgb(91, 90, 92);
-}
-.data_admissao{
-    width: 14%;
-}
-.input_telefone {
-    margin-left: -7px;
-    border-top: 0;
-    border-right: 0;
-    width: 14.9%;
-}
-.input_secretaria {
-    border-top: 0;
-    border-right: 0;
-    width: 20%;
-}
-.input_departamento {
-    border-top: 0;
-    border-right: 0;
-    width: 16%;
-}
-.input_carga_horaria {
-    border-top: 0;
-    width: 15.664%;
-}
-.input_cargo_funcao {
-    margin-left: -7px;
-    border-top: 0;
-    border-right: 0;
-    width: 49.3%;
-}
-.input_salario_base {
-    border-top: 0;
-    width: 17.2634%;
-}
-
+  	.floating_label label {position:absolute; top:9px; font-size:13px; color:#515152; opacity:0; cursor:text; font-family: 'Open Sans', sans-serif;
+		-webkit-transition: opacity 200ms ease, right 200ms ease;
+		-moz-transition: opacity 200ms ease, right 200ms ease;
+		-ms-transition: opacity 200ms ease, right 200ms ease;
+		-o-transition: opacity 200ms ease, right 200ms ease;
+		transition: opacity 200ms ease, right 200ms ease;
+	}
 .button_salvar button {
     margin: 2% 0 0  0;
     padding: 20px;

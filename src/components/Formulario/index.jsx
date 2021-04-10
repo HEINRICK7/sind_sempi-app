@@ -186,243 +186,332 @@ const Formulario = () => {
 
     return (
         <form onSubmit={handleRegister}>
-         
-           <div className="input_md3">
-               <input 
-               className="input_left" 
-               type="text" 
-               placeholder="MATRICULA"
-               value={matricula}
-               onChange={ e => setMatricula(e.target.value)}
-               required
-               />
-               <input 
-               className="input_center" 
-               type="text" 
-               placeholder="NOME"
-               value={nome}
-               onChange={ e => setNome(e.target.value)}
-               required
-               />
-               <input 
-               className="input_rigth"
-               type="text" 
-               placeholder="DATA DE NASCIMENTO"
-               value={data_nasc}
-               onChange={  MaskData_Nasc }
-               maxLength="10"
-               required
-               />
+        <div className="container_formulario"> 
+            <div className="input_md1">
+                <div className="floating_label" >
+                    <input 
+                    className="form-control"
+                    type="text" 
+                    name="matricula" 
+                    id="matricula"
+                    placeholder="matricula"
+                    value={matricula}
+                    onChange={ e => setMatricula(e.target.value)}
+                    required
+                    />
+                    <label htmlFor="matricula">matricula</label>
+                </div>
+                <div className="floating_label" >
+                    <input 
+                    className="form-control"
+                    type="text" 
+                    name="nome"
+                    placeholder="nome"
+                    value={nome}
+                    onChange={ e => setNome(e.target.value)}
+                    required
+                    />
+                     <label htmlFor="nome">nome</label>
+                </div> 
+                <div className="floating_label" >
+                    <input
+                    className="form-control"
+                    type="text" 
+                    name="data_nasc"
+                    placeholder="data_nasc"
+                    value={data_nasc}
+                    onChange={  MaskData_Nasc }
+                    maxLength="10"
+                    required
+                    />
+                    <label htmlFor="data_nasc">data_nasc</label>
+               </div> 
            </div>
-           <div>
-                <input 
-                className="input_cpf" 
-                type="text" 
-                placeholder="CPF"
-                value={cpf}
-                onChange={ MaskCpf }
-                required
-                />
-                <input 
-                className="input_rg" 
-                type="text" 
-                placeholder="RG"
-                value={rg}
-                onChange={ MaskRg }
-                required
-                />
-                <input 
-                className="input_uf"
-                type="text" 
-                placeholder="UF"
-                value={uf_servidor}
-                onChange={ e => setUF_Servidor(e.target.value)}
-                />
-                <input 
-                className="input_endereco"
-                type="text" 
-                placeholder="ENDERECO"
-                value={endereco}
-                onChange={ e => setEndereco(e.target.value)}
-                />
+            <div className="input_md2">
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="CPF"
+                    value={cpf}
+                    onChange={ MaskCpf }
+                    required
+                    />
+                    <label htmlFor="cpf">cpf</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="RG"
+                    value={rg}
+                    onChange={ MaskRg }
+                    required
+                    />
+                    <label htmlFor="rg">rg</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="UF"
+                    value={uf_servidor}
+                    onChange={ e => setUF_Servidor(e.target.value)}
+                    />
+                    <label htmlFor="uf_servidor">uf</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control"
+                    type="text" 
+                    placeholder="ENDERECO"
+                    value={endereco}
+                    onChange={ e => setEndereco(e.target.value)}
+                    />
+                    <label htmlFor="endereco">endereço</label>
+                </div>
            </div>
-           <div>
-               <input 
-               className="input_bairro" 
-               type="text" 
-               placeholder="BAIRRO"
-               value={bairro}
-               onChange={ e => setBairro(e.target.value)}
-               />
-               <input 
-               className="input_cidade" 
-               type="text" 
-               placeholder="CIDADE"
-               value={cidade}
-               onChange={ e => setCidade(e.target.value)}
-               />
-               <input 
-               className="input_cep"
-               type="text" 
-               placeholder="CEP"
-               value={cep}
-               onChange={ MaskCep }
-               maxLength="9"
-               />
-               <input 
-               className="input_escolaridade"
-               type="text" 
-               placeholder="ESCOLARIDADE"
-               value={escolaridade}
-               onChange={ e => setEscolaridade(e.target.value)}
-               />
-               <input 
-               className="input_pisPasep" 
-               type="text" 
-               placeholder="PIS/PASEP"
-               value={pis_pasep}
-               onChange={ MaskPisPasep }
-               maxlength="14"
-               required
-               />
-               <input 
-               className="input_estCivil"
-               type="text" 
-               placeholder="EST.CIVIL"
-               value={est_civil}
-               onChange={ e => setEst_Civil(e.target.value)}
-               />
+            <div className="input_md3">
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="BAIRRO"
+                    value={bairro}
+                    onChange={ e => setBairro(e.target.value)}
+                    />
+                    <label htmlFor="bairro">bairro</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="CIDADE"
+                    value={cidade}
+                    onChange={ e => setCidade(e.target.value)}
+                    />
+                    <label htmlFor="cidade">cidade</label>
+               </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control"
+                    type="text" 
+                    placeholder="CEP"
+                    value={cep}
+                    onChange={ MaskCep }
+                    maxLength="9"
+                    />
+                    <label htmlFor="cep">cep</label>
+               </div>
+            </div>   
+            <div className="input_md4">
+                <div className="floating_label">
+                    <input 
+                    className="form-control"
+                    type="text" 
+                    placeholder="ESCOLARIDADE"
+                    value={escolaridade}
+                    onChange={ e => setEscolaridade(e.target.value)}
+                    />
+                    <label htmlFor="escolaridade">escolaridade</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="PIS/PASEP"
+                    value={pis_pasep}
+                    onChange={ MaskPisPasep }
+                    maxlength="14"
+                    required
+                    />
+                    <label htmlFor="pis_pasep">pis/pasep</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control"
+                    type="text" 
+                    placeholder="EST.CIVIL"
+                    value={est_civil}
+                    onChange={ e => setEst_Civil(e.target.value)}
+                    />
+                    <label htmlFor="est_civil">est_civil</label>
+               </div>
            </div>
-           <div>
-               <input 
-               className="input_nomeConjuge" 
-               type="text" 
-               placeholder="NOME DO CONJUGE"
-               value={nome_conjuge}
-               onChange={ e => setNome_Conjuge(e.target.value)}
-               />
-               <input 
-               className="input_telResidencial" 
-               type="text" 
-               placeholder="TEL.RESIDENCIAL"
-               value={tel_residencial}
-               onChange={ MaskTel_Residencial}
-               maxlength="15"
-               />
-               <input 
-               className="input_telCelular"
-               type="text" 
-               placeholder="TEL.CELULAR"
-               value={tel_celular}
-               onChange={ MaskTelefone_Celular}
-               maxlength="15"
-               />
+            <div  className="input_md5">
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="NOME DO CONJUGE"
+                    value={nome_conjuge}
+                    onChange={ e => setNome_Conjuge(e.target.value)}
+                    />
+                    <label htmlFor="nome_conjuge">nome do cônjuge</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form_control" 
+                    type="text" 
+                    placeholder="TEL.RESIDENCIAL"
+                    value={tel_residencial}
+                    onChange={ MaskTel_Residencial}
+                    maxlength="15"
+                    />
+                    <label htmlFor="tel_residencial">tel_residencial</label>
+               </div>
+               <div className="floating_label">
+                    <input 
+                    className="form-control"
+                    type="text" 
+                    placeholder="TEL.CELULAR"
+                    value={tel_celular}
+                    onChange={ MaskTelefone_Celular}
+                    maxlength="15"
+                    />
+                    <label htmlFor="tel_celular">tel_celular</label>
+                </div>
            </div>
-           <div>
-                <input 
-                className="input_email" 
-                type="text" 
-                placeholder="E-MAIL"
-                value={email}
-               onChange={ e => setEmail(e.target.value)}
-                />
+            <div className="input_md6">
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="E-MAIL"
+                    value={email}
+                    onChange={ e => setEmail(e.target.value)}
+                    />
+                    <label htmlFor="email">email</label>
+                </div>
             </div>
-        <div className="dependentes">
-            <h5>NOME DOS DEPENDENTES: </h5>
-            <div>
-                <input 
-                className="input_dependentes" 
-                type="text" 
-                placeholder="NOME"
-                value={nome_dependentes}
-               onChange={ e => setNome_Dependentes(e.target.value)}
-                />
+            <div className="input_md7">
+                <h5>NOME DOS DEPENDENTES: </h5>
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="NOME"
+                    value={nome_dependentes}
+                    onChange={ e => setNome_Dependentes(e.target.value)}
+                    />
+                    <label htmlFor="nome_dependentes">nome dependentes</label>
+                </div>
             </div>
-        </div>
-        <div className="dados_cadastrais">
-            <h5>DADOS CADASTRAIS: </h5>
-            <div>
+            <div className="text_h5">
+                <h5>DADOS CADASTRAIS: </h5>
+                <div className="input_md8">
+                    <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="ORGÃO EMPREGADOR"
+                    value={orgao_empregador}
+                    onChange={ e => setOrgao_Empregador(e.target.value)}
+                    />
+                    <label htmlFor="orgao_empregador">orgao empregador</label>
+                </div>
+                    <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="MUNICIPIO"
+                    value={municipio}
+                    onChange={ e => setMunicipio(e.target.value)}
+                    />
+                    <label htmlFor="municipio">municipio</label>
+                </div>
+                    <div className="floating_label">
                 <input 
-                className="orgao_empregador" 
-                type="text" 
-                placeholder="ORGÃO EMPREGADOR"
-                value={orgao_empregador}
-                onChange={ e => setOrgao_Empregador(e.target.value)}
-                />
-                <input 
-                className="municipio" 
-                type="text" 
-                placeholder="MUNICIPIO"
-                value={municipio}
-                onChange={ e => setMunicipio(e.target.value)}
-                />
-                <input 
-                className="uf" 
-                type="text" 
-                placeholder="UF"
-                value={uf}
-                onChange={ e => setUf(e.target.value)}
-                />
-                <input 
-                className="data_admissao" 
-                type="text" 
-                placeholder="DATA DE ADMISSÃO"
-                value={data_admissao}
-                onChange={ MaskData_Adm}
-                maxLength="10"
-                />
+                    className="form-control" 
+                    type="text" 
+                    placeholder="UF"
+                    value={uf}
+                    onChange={ e => setUf(e.target.value)}
+                    />
+                    <label htmlFor="uf">uf</label>
+                </div>
+                    <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="DATA DE ADMISSÃO"
+                    value={data_admissao}
+                    onChange={ MaskData_Adm}
+                    maxLength="10"
+                    />
+                    <label htmlFor="data_admissao">data admissao</label>
+                </div>
+                </div>
             </div>
-            <div>
+            <div className="input_md9">
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="TELEFONE"
+                    value={telefone}
+                    onChange={ MaskTelefone }
+                    maxlength="15"
+                    />
+                    <label htmlFor="telefone">telefone</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="SECRETARIA"
+                    value={secretaria}
+                    onChange={ e => setSecretaria(e.target.value)}
+                    />
+                    <label htmlFor="secretaria">secretaria</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="DEPARTAMENTO"
+                    value={departamento}
+                    onChange={ e => setDepartamento(e.target.value)}
+                    />
+                    <label htmlFor="departamento">departamento</label>
+                </div>
+                <div className="floating_label">
                 <input 
-                className="input_telefone" 
-                type="text" 
-                placeholder="TELEFONE"
-                value={telefone}
-                onChange={ MaskTelefone }
-                maxlength="15"
-                />
-                <input 
-                className="input_secretaria" 
-                type="text" 
-                placeholder="SECRETARIA"
-                value={secretaria}
-                onChange={ e => setSecretaria(e.target.value)}
-                />
-                <input 
-                className="input_departamento" 
-                type="text" 
-                placeholder="DEPARTAMENTO"
-                value={departamento}
-                onChange={ e => setDepartamento(e.target.value)}
-                />
-                <input 
-                className="input_carga_horaria"
+                className="form-control"
                 type="text" 
                 placeholder="CARGA HORARIA"
                 value={carga_horaria}
                 onChange={ e => setCarga_Horaria(e.target.value)}
                 />
+                <label htmlFor="carga_horaria"> carga horaria</label>
+                </div>
             </div>
-            <div>
+            <div className="input_md10">
+                <div className="floating_label">
                 <input 
-                className="input_cargo_funcao" 
-                type="text" 
-                placeholder="CARGO/FUNÇÃO"
-                value={cargo_funcao}
-                onChange={ e => setCargo_Funcao(e.target.value)}
-                />
-                <input 
-                className="input_salario_base" 
-                type="text" 
-                placeholder="SALARIO BASE"
-                value={salario_base}
-                onChange={ MaskSalario_base }
-                />
+                    className="form-control" 
+                    type="text" 
+                    placeholder="CARGO/FUNÇÃO"
+                    value={cargo_funcao}
+                    onChange={ e => setCargo_Funcao(e.target.value)}
+                    />
+                    <label htmlFor="cargo_funcao">cargo/funcao</label>
+                </div>
+                <div className="floating_label">
+                    <input 
+                    className="form-control" 
+                    type="text" 
+                    placeholder="SALARIO BASE"
+                    value={salario_base}
+                    onChange={ MaskSalario_base }
+                    />
+                    <label htmlFor="salario_base">salario base</label>
+                </div>
             </div>
         </div>
-        <div className="button_salvar">
-            <button type="submit">Salvar</button>
-        </div>
+            <div className="button_salvar">
+                <button type="submit">Salvar</button>
+            </div>
         </form>
     )
 }

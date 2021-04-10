@@ -71,8 +71,8 @@ const handleEdit = async () => {
     
 }
     return (
-        <>
-          < NavBar />
+        <div>
+          < NavBar/>  
           <div className="container_pdfViewer">
                 <Pdf targetRef={ref} filename={`${models.nome}.pdf`}>
                     {({ toPdf }) => 
@@ -384,7 +384,7 @@ const handleEdit = async () => {
                 </form>
             </div>
           </div>  
-        </>
+        </div>
     )
 }
 

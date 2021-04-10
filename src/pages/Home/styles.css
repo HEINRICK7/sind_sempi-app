@@ -1,24 +1,8 @@
-  
-  /* ------------------------------------ */
-  h1,h2,h3,h4,h5,h6 {margin: 0px;}
-  
-  p {margin: 0px;}
-  
+
   ul, li {
       margin: 10px;
       list-style-type: none;
   }
-  
-  textarea {
-    display: block;
-    outline: none;
-  }
-  
-  textarea:focus, input:focus {
-    border-color: transparent !important;
-  }
-  
-  /* ------------------------------------ */
   button {
       outline: none !important;
       border: none;
@@ -30,7 +14,7 @@
   }
   .container_home {
     padding-top: 20px;
-    margin: 8% 2% auto 4.6%;
+    margin: 5% 2% 10% 4.6%;
     background: cornsilk;
     width: 90%;
     height: auto;

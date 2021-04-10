@@ -44,21 +44,23 @@ const Home = () => {
 		return result.secretaria.toLowerCase().includes(search.toLowerCase())
 	
 	})
+
+	const secretaria_name = filteredServidor.map(results => results.secretaria).find( el => el.secretaria === el.secretaria);
 	console.log(filteredServidor)
     return (
         <>
 			< NavBar />	
+			<div className="container_home">
 			<div className="container_relatorio">
-			<Pdf targetRef={ref} filename={`${filteredServidor.map(results => results.secretaria)}.pdf`}>
-                    {({ toPdf }) => 
-                        <Link to={`/list_servidor`}>
-                            <button className="buttom_download" onClick={toPdf}>Gerar Pdf</button>
-                        </Link>
-                    }
-                </Pdf> 
+			<Pdf targetRef={ref} filename={`${secretaria_name}.pdf`}>
+                {({ toPdf }) => 
+                    <Link to={`/list_servidor`}>
+                        <button className="buttom_download" onClick={toPdf}>Gerar Pdf</button>
+                    </Link>
+                }
+            </Pdf> 
 
-				<h1 style={{ marginBottom: 50, textAlign: 'center' ,color:'#555555'}}>Relatórios</h1>
-				<h4>servidores cadastrados {filteredServidor.length}</h4>
+				<h1 style={ {textAlign: 'center' ,color:'#555555'}}>Relatórios</h1>
 					<div className="search">
        					  <input 
        					  type="text" 
@@ -67,6 +69,8 @@ const Home = () => {
        					  onChange={e => setSearch(e.target.value)}
        					  />
      	 			</div>
+					  <h4 style={ {textAlign: 'center',fontSize: 24 ,color:'#555555'}}>servidores cadastrados : {filteredServidor.length}</h4>
+
 				<div className="container_table" ref={ref}>
             	  <div className="table_pdf">
 				  <div className="cabecalho">
@@ -102,7 +106,7 @@ const Home = () => {
 			</div>
 			    </div>
 			</div>			
-							
+			</div>				
 	</>
 )					
 }

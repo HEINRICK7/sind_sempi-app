@@ -1,13 +1,12 @@
 .container_pdfViewer{
-    margin-top: 150px;
-    padding: 40px;
+    padding: 30px;
     width: 90%;
+    height: auto;
     margin: 50px auto;
-    background: rgb(243, 233, 222);
+    background: peru;
     
 }
 .formulario_servidor_pdf {
-    padding: 20px;
     background: rgb(252, 251, 250);
     width: 21cm;
     height: 29.7cm;
@@ -42,7 +41,7 @@
     border-right: 0;
 }
 .float_matricula {
-    margin-left: 5px;
+    margin: 3px 0 0 5px;
     position: absolute;
     
 }
@@ -51,7 +50,7 @@
     border-right: 0;
 }
 .float_nome {
-    margin-left: 5px;
+    margin: 3px 0 0 5px;
     position: absolute;
     
     
@@ -60,7 +59,7 @@
     width: 100%;
 }
 .float_nascimento {
-    margin-left: 5px;
+    margin: 3px 0 0 5px;
     position: absolute;
     
     
@@ -370,7 +369,7 @@
 }
 
 .input_inline_pdf {
-    margin-top: -30px;
+    margin-top: -50px;
     padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -380,6 +379,7 @@
 .input_inline_pdf input {
     width: 100%;
     border: none;
+    background: transparent;
     border-bottom: 2px solid #222121; 
 }
 .float_local_data{
@@ -413,7 +413,7 @@
 }
 .footer_pd {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 95%;
     border: none;
     border-top: 3px solid #222121;
@@ -440,7 +440,8 @@
 }
 
 .container_pdfViewer .buttom_download {
-    padding: 30px;
+    position: relative;
+    top: -13px;
     width: auto;
     height: 60px;
     float: right;

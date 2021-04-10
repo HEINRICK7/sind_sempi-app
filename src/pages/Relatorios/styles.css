@@ -5,6 +5,7 @@
         height: 29.7cm;
         margin: 0 auto; 
         border-radius: 8px;
+        border: 1px solid rgba(76, 76, 77, 0.103);
   }
   .search {
       margin: 0 auto 30px auto;
@@ -20,3 +21,19 @@
     text-align: center;
     margin: 50px auto -100px auto;
   }
+  .container_relatorio .buttom_download {
+    position: relative;
+    top: 60px;
+    right: 10px;
+    width:auto;
+    height: 60px;
+    float: right;
+    background: seagreen;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+
+}
