@@ -15,7 +15,9 @@ input {
 }
 
 @media (max-width: 576px) {
-    .formulario_servidor_edit_servidor  {
+    .container_cad_servidor {
+        margin: 0;
+        padding: 10px;
         width: 100%;
-    }
+    }  
   }
