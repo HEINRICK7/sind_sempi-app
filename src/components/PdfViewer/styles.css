@@ -1,9 +1,10 @@
-.container_pdfViewer{
-    padding: 30px;
-    width: 90%;
-    height: auto;
-    margin: 50px auto;
-    background: peru;
+container_pdfViewer{
+    padding: 10px;
+    margin: 20px auto auto -50px;
+    background: cornsilk;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
 .formulario_servidor_pdf {
