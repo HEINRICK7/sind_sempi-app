@@ -116,7 +116,7 @@ const Home = () => {
 									</td>
 
 									<td className="column6">
-										<Link to={`./document_pdf/${result._id}`}>
+										<Link to={`./document_pdf/${result._id}`} target="_blank" rel="noopener noreferrer" >
 											<button 
 											 className="button_imprimir">
 											  <PrinterOutlined className="icon_imprimir"

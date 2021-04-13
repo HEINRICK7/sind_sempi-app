@@ -49,8 +49,6 @@ const Login = () => {
                  history.push('/list_servidor');
               }, 1000);
 
-           
-    
         } catch (error) {
             
           message.loading({ content: 'processando...', key });

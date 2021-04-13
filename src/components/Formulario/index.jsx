@@ -194,19 +194,19 @@ const Formulario = () => {
                     type="text" 
                     name="matricula" 
                     id="matricula"
-                    placeholder="matricula"
+                    placeholder="MÁTRICULA"
                     value={matricula}
                     onChange={ e => setMatricula(e.target.value)}
                     required
                     />
-                    <label htmlFor="matricula">matricula</label>
+                    <label htmlFor="matricula">mátricula</label>
                 </div>
                 <div className="floating_label" >
                     <input 
                     className="form-control"
                     type="text" 
                     name="nome"
-                    placeholder="nome"
+                    placeholder="NOME"
                     value={nome}
                     onChange={ e => setNome(e.target.value)}
                     required
@@ -218,7 +218,7 @@ const Formulario = () => {
                     className="form-control"
                     type="text" 
                     name="data_nasc"
-                    placeholder="data_nasc"
+                    placeholder="DATA_NASC"
                     value={data_nasc}
                     onChange={  MaskData_Nasc }
                     maxLength="10"
@@ -343,7 +343,7 @@ const Formulario = () => {
                     <input 
                     className="form-control" 
                     type="text" 
-                    placeholder="NOME DO CONJUGE"
+                    placeholder="NOME DO CÔNJUGE"
                     value={nome_conjuge}
                     onChange={ e => setNome_Conjuge(e.target.value)}
                     />
@@ -414,11 +414,11 @@ const Formulario = () => {
                     <input 
                     className="form-control" 
                     type="text" 
-                    placeholder="MUNICIPIO"
+                    placeholder="MUNICÍPIO"
                     value={municipio}
                     onChange={ e => setMunicipio(e.target.value)}
                     />
-                    <label htmlFor="municipio">municipio</label>
+                    <label htmlFor="municipio">município</label>
                 </div>
                     <div className="floating_label">
                 <input 
@@ -501,11 +501,11 @@ const Formulario = () => {
                     <input 
                     className="form-control" 
                     type="text" 
-                    placeholder="SALARIO BASE"
+                    placeholder="SALÁRIO BASE"
                     value={salario_base}
                     onChange={ MaskSalario_base }
                     />
-                    <label htmlFor="salario_base">salario base</label>
+                    <label htmlFor="salario_base">salário base</label>
                 </div>
             </div>
         </div>

@@ -71,12 +71,11 @@ const handleEdit = async () => {
     
 }
     return (
-        <div>
-          < NavBar/>  
+        <div> 
           <div className="container_pdfViewer">
                 <Pdf targetRef={ref} filename={`${models.nome}.pdf`}>
                     {({ toPdf }) => 
-                        <Link to={`/list_servidor`}>
+                        <Link>
                             <button className="buttom_download" onClick={toPdf}>Gerar Pdf</button>
                         </Link>
                     }
