@@ -14,9 +14,8 @@
     margin-top: 50px;
     color:rgb(40, 2, 75);
 }
-
-.formulario_servidor h1 {
+.container_cad_servidor h1 {
     font-size: 28px;
     font-weight: 900;
-    color: rgb(88, 88, 88);
+    color:#71B280;
 }

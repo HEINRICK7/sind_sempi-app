@@ -109,9 +109,9 @@ const Formulario = () => {
     return (
         <>
             < Navbar/>
-            <div className="container_cad_servidor">
+            <div className="container_edit_servidor">
                 <h1>Editar Servidor</h1>
-                <div className="formulario_servidor_cad_servidor">    
+                <div className="formulario_servidor_edit_servidor">    
                     <form onSubmit={onSubmit}>
                     <div className="container_formulario"> 
             <div className="input_md1">

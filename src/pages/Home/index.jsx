@@ -65,7 +65,7 @@ const Home = () => {
         <>
 			< NavBar />	
 			<div className="container_home">
-				<h1 style={{ marginBottom: 50, textAlign: 'center' ,color:'#555555'}}>Listar Servidores</h1>
+				<h1>Listar Servidores</h1>
             	<div className="table">
 				
 					<div className="search">
