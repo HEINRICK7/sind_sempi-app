@@ -31,18 +31,16 @@ const Login = () => {
       setTimeout(() => {
         message.warning({ content: 'Digite Email e Senha', key, duration: 2 });
       }, 1000);
-    };
-    
-    
-    if(email && password !== '') {
+    }
+    else {
 
         try {
+            message.loading({ content: 'Processando...', key });
             const response = await api.post('/auth/authenticate', data);
             const { token } = response.data;
           
             
             localStorage.setItem('token', token);
-            message.loading({ content: 'Processando...', key });
               setTimeout(() => {
                 message.success({ content: 'Acesso Liberado', key, duration: 2 });
 
