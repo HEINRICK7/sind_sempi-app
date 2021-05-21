@@ -16,7 +16,9 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-  
+.container_login h1 {
+    color: #71B280;
+}  
 @media screen and (max-width: 992px) {
     .box {
         padding: 10px;

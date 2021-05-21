@@ -21,6 +21,11 @@
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+  .container_home h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #71B280;
+  }
   .table {
     width: auto;
     display: flex;
@@ -66,7 +71,6 @@
   table td.r, table th.r {
     text-align: center;
   }
-  
 
    th{
     font-family: Roboto;

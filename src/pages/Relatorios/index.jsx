@@ -60,7 +60,7 @@ const Home = () => {
                 }
             </Pdf> 
 
-				<h1 style={ {textAlign: 'center' ,color:'#555555'}}>Relatórios</h1>
+				<h1 style={ {textAlign: 'center' ,color:'#71B280'}}>Relatórios</h1>
 					<div className="search">
        					  <input 
        					  type="text" 
